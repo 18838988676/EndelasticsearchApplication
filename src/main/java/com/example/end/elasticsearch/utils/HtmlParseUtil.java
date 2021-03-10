@@ -31,7 +31,7 @@ public class HtmlParseUtil {
 
         for (Element el: elements){
 
-            String img = el.getElementsByTag("img").eq(0).attr("src");
+            String img = el.getElementsByTag("data-lazy-img").eq(0).attr("src");
             String price = el.getElementsByClass("p-price").eq(0).text();
             String title = el.getElementsByClass("p-name").eq(0).text();
             Content content = new Content();
